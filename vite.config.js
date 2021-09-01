@@ -2,7 +2,7 @@
  * @Author: liuhl
  * @Date: 2021-09-01 09:37:30
  * @LastEditors: liuhl
- * @LastEditTime: 2021-09-01 11:11:51
+ * @LastEditTime: 2021-09-01 14:54:21
  * @Description: file content
  */
 import vue from '@vitejs/plugin-vue'
@@ -31,7 +31,7 @@ console.log(process.env.VITE_APP_PROXY_URL)
 // https://vitejs.dev/config/
 module.exports = {
   // 项目启动的根路径
-  // root: '',
+  root: 'src/pages/',
   // 访问路径 , 默认 ./
   base: process.env.VITE_BASE_URL || './',
   assetsDir: './',
@@ -39,7 +39,7 @@ module.exports = {
   // 设置别名
   resolve: {
     alias: {
-      '/@': pathResolve('src')
+      '@': pathResolve('src')
     }
   },
   optimizeDeps: {
